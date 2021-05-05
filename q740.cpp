@@ -6,7 +6,7 @@ public:
     int rob(vector<int> &nums)
     {
         int size = nums.size();
-        int first = nums[0] , second = nums[1];
+        int first = nums[0] , second = max(nums[1], nums[0]);
         for(int i = 2; i < size; i++)
         {
             int temp = second;
