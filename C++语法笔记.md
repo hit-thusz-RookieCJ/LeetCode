@@ -6,6 +6,7 @@
 - copy函数可以用来快速复制：*copy(names.begin(), names.end(), table[0].begin() + 1);*
 - to_string()可以：int -> string
 - stoi()可以：string -> int
+- max_element()：int maxVal = *max_element(deliciousness.begin(), deliciousness.end());
 
 
 
