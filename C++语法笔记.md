@@ -7,6 +7,7 @@
 - to_string()可以：int -> string
 - stoi()可以：string -> int
 - max_element()：int maxVal = *max_element(deliciousness.begin(), deliciousness.end());
+- upper_bound()：返回第一个大于x的数的地址，auto i = upper_bound(pairs.begin(), pairs.end(), x);（具体可见q981）
 
 
 
@@ -22,7 +23,7 @@
 
 - **unordered_set**：insert()插入集合中、
 
-- **vector<v_type>** ：push_back()放到表后、
+- **vector<v_type>** ：push_back()放到表后、emplace_back()直接构造某对象放到表后（如pair，具体可见q981）
 
 - unordered_map<v_type, int>中没有的会一律初始化为0。
 
