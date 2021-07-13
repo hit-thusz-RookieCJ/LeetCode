@@ -8,6 +8,7 @@
 - stoi()可以：string -> int
 - max_element()：int maxVal = *max_element(deliciousness.begin(), deliciousness.end());
 - upper_bound()：返回第一个大于x的数的地址，auto i = upper_bound(pairs.begin(), pairs.end(), x);（具体可见q981）
+- decltype()：获得表达式的类型（priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)>）
 
 
 
@@ -33,7 +34,15 @@
 
   for(auto &a:b)中加了引用符号，可以对容器中的内容进行赋值，即可通过对a赋值来做到容器b的内容填充。
 
-- 
+- **priority_queue<Type, Container, Functional>**：（priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(cmp)> que(cmp);）
 
+  1. top 访问队头元素
+  2. empty 队列是否为空
+  3. size 返回队列内元素个数
+  4. push 插入元素到队尾 (并排序)
+  5. emplace 原地构造一个元素并插入队列
+  6. pop 弹出队头元素
+  7. swap 交换内容
 
+  
 
