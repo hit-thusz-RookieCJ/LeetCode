@@ -44,5 +44,5 @@
   6. pop 弹出队头元素
   7. swap 交换内容
 
-  
+- copy数组的方式：vector<int> rec(nums1);
 
